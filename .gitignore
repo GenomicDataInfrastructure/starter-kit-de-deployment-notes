@@ -128,7 +128,8 @@ typings/
 deploy/ontologies/*.obo
 deploy/ontologies/*.owl*
 .antlr/
-
+beacon2-ri-api/beacon/db/similarities/*.txt
+beacon2-ri-api/beacon/db/descendants/*.txt
 alternate_docker_compose_ls.yml
 frontend3
 
