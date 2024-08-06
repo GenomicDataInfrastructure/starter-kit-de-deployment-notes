@@ -1,0 +1,33 @@
+
+services:
+  traefik:
+    # The latest official supported Traefik docker image
+    image: traefik:latest
+    container_name: traefik
+    #Enables the Traefik Dashboard and tells Traefik to listen to docker
+    #command:
+    #  - --logLevel=DEBUG #so we can see what Traefik is doing in the log files
+    ports:
+      # Exposes port 80 for incomming web requests
+      - "443:443"
+      # The Web UI port http://0.0.0.0:8080 (enabled by --api.insecure=true)
+      - "80:80"
+    networks:
+      - traefik-proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.gdi.dkfz.de`)"
+      - "traefik.http.routers.traefik.entrypoints=websecure"
+      - "traefik.http.routers.traefik.service=api@internal"
+      - "traefik.http.routers.traefik.middlewares=strip"
+      - "traefik.http.middlewares.strip.stripprefix.prefixes=/traefik"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.yml:/etc/traefik/traefik.yml
+      - ./dynamic_conf.yml:/etc/traefik/dynamic_conf.yml
+      - ./log/:/var/log/traefik/
+      - ./certs:/etc/certs/
+networks:
+  traefik-proxy:
+    name: traefik-proxy

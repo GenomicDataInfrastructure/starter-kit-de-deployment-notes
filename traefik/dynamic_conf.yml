@@ -1,0 +1,15 @@
+################################################################
+# certificates
+################################################################
+tls:
+  options:
+    default:
+      minVersion: VersionTLS13
+  certificates:
+      - certFile: /etc/certs/fullchain.pem
+        keyFile: /etc/certs/privkey.pem
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /etc/certs/fullchain.pem
+        keyFile: /etc/certs/privkey.pem
