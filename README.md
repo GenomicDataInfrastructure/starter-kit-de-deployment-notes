@@ -39,7 +39,8 @@ Host 10.133.24* 10.133.25*
 
 cd into the `traefik` directory
 ```
-cp -r certs_example certs
+mkdir certs
+mkdir log
 ```
 copy your certificate file to the folder.
 if the filenames are different than "fullchain.pem" and "privkey.pem" update the `dynamic_conf.yml` file
