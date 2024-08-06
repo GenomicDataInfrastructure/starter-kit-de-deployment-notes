@@ -5,7 +5,7 @@
 *.pem
 
 # Ignore all files in logs directory
-logs/
+#logs/
 
 # Ignore specific file
 secrets.txt
