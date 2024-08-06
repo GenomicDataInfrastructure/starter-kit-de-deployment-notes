@@ -46,7 +46,7 @@ if the filenames are different than "fullchain.pem" and "privkey.pem" update the
 
 * Don't forget to set up a cronjob to update the certificate files when they are renewed
 
-update the following line "traefik.http.routers.traefik.rule=Host(`traefik.gdi.dkfz.de`)" in `docker-compose.yml` with your hostname url  
+update the following line "traefik.http.routers.traefik.rule=Host(`traefik.gdi.dkfz.de`)" in `docker-compose.yml` with your dashboard hostname url  
 
 ```
 docker compose up -d
