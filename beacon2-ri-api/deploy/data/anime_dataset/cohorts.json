@@ -1,0 +1,70 @@
+[
+  {
+     "cohortSize" : 3,
+     "cohortType" : "user-defined",
+     "id" : "Anime_Characters",
+     "ids" : {
+        "biosampleIds" : [
+           "GAMABUNTA_SKIN",
+           "CHOPPER_ANTLERS",
+           "KURAMA_FANG"
+        ]
+     },
+
+     "collectionEvents" : [ {
+         "eventGenders" : {
+            "availability" : true,
+            "availabilityCount" : 3,
+            "distribution" : {
+               "genders" : {
+                  "female" : 1,
+                  "male" : 2
+               }
+            }
+         },
+         "eventLocations" : {
+            "availability" : true,
+            "availabilityCount" : 3,
+            "distribution" : {
+               "locations" : {
+                  "ONE PIECE" : 1,
+		  "NARUTO" : 2
+               }
+            }
+      }
+     }],
+
+     "inclusionCriteria" : {
+         "ageRange" : {
+            "end" : {
+               "iso8601duration" : "P94Y"
+            },
+            "start" : {
+               "iso8601duration" : "P89Y"
+            }
+         },
+
+        "genders" : [
+           {
+              "id" : "NCIT:C16976",
+              "label" : "female"
+           },
+           {
+              "id" : "NCIT:C20247",
+              "label" : "male"
+           }
+        ],
+        "locations" : [
+           {
+              "id" : "FICTIONPLACE_1",
+              "label" : "One Piece"
+           },
+	   {
+              "id" : "FICTIONPLACE_2",
+              "label" : "Naruto"
+           }
+        ]
+     },
+     "name" : "Anime characters synthetic cohort"
+  }
+]

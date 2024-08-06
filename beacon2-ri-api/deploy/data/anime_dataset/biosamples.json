@@ -1,0 +1,81 @@
+[
+  {
+     "biosampleStatus" : {
+        "id" : "EFO:0000611",
+        "label" : "reference sample"
+     },
+     "collectionDate" : "2024-03-07",
+     "id" : "GAMABUNTA_SKIN",
+     "individualId" : "GAMABUNTA",
+     "info": {
+      "characteristics" : [
+         {
+            "organism" : [
+               {
+                  "text" : "Bufo bufo (toad)"
+               }
+            ]
+         }
+       ],
+       "taxId" : 8384
+     },
+     "sampleOriginType" : {
+        "id" : "UBERON:0000479",
+        "label" : "tissue portion"
+     },
+     "datasetId" : "Anime_Characters"
+  },
+  
+  {
+     "biosampleStatus" : {
+        "id" : "EFO:0002008",
+        "label" : "reference sample"
+     },
+     "collectionDate" : "2024-03-07",
+     "id" : "CHOPPER_ANTLERS",
+     "individualId" : "CHOPPER",
+     "info": {
+      "characteristics" : [
+         {
+            "organism" : [
+               {
+                  "text" : "Rangifer tarandus (reindeer)"
+               }
+            ]
+         }
+       ],
+       "taxId" : 9870
+     },
+     "sampleOriginType" : {
+        "id" : "UBERON:0002481",
+        "label" : "bone tissue"
+     },
+     "datasetId" : "Anime_Characters"
+  },
+  {
+     "biosampleStatus" : {
+        "id" : "EFO:0002308",
+        "label" : "reference sample"
+     },
+     "collectionDate" : "2024-03-07",
+     "id" : "KURAMA_FANG",
+     "individualId" : "KURAMA",
+     "info": {
+        "characteristics" : [
+           {
+              "organism" : [
+                 {
+                    "text" : "Vulpes vulpes (fox)"
+                 }
+              ]
+           }
+         ],
+         "taxId" : 9627
+     },
+     "sampleOriginType" : {
+        "id" : "UBERON:0003674",
+        "label" : "cuspid tissue"
+     },
+     "datasetId" : "Anime_Characters"
+  }
+]
