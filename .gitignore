@@ -1,0 +1,15 @@
+# Ignore all .log files
+*.log
+
+# Ignore certificate file
+*.pem
+
+# Ignore all files in logs directory
+logs/
+
+# Ignore specific file
+secrets.txt
+copy_certs.sh
+
+# Ignore all files with .tmp extension
+*.tmp
