@@ -35,6 +35,14 @@ Host 10.133.24* 10.133.25*
   ServerAliveInterval 120
 ```
 
+## Repos in the deployment
+
+1. https://github.com/GenomicDataInfrastructure/starter-kit-rems
+2. https://github.com/GenomicDataInfrastructure/starter-kit-beacon2-ri-api.git
+
+## Create certificates for services
+The user facing services are running with TLS encryption. To create the certificates, we used Certbot. and then copied the certificate files to the traefik directory
+
 ## traefik proxy install
 
 cd into the `traefik` directory
