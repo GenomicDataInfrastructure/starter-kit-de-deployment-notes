@@ -154,4 +154,4 @@ copy_certs.sh
 private-key.jwk
 public-key.jwk
 devconfig.edn
-
+config.edn
