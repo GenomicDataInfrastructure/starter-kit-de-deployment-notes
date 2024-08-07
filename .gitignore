@@ -150,3 +150,8 @@ copy_certs.sh
 
 # Ignore all files with .tmp extension
 *.tmp
+
+private-key.jwk
+public-key.jwk
+devconfig.edn
+
